@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset=utf-8 />
+      <title>Return first and last name from a form - w3resource</title>
+    </head>
+    
+    <body>
+      <P>Escriba una función y llámela al hacer clic en un botón para mostrar una alerta con:
+      </P>
+      <p>El número de enlaces en la página.</p>
+      <p>El primer enlace de la página.</p>
+      <p>El último enlace de la página </p>
+      <a href="/exercise1.html"></a>
+      <a href="/exercise2.html"></a>
+      <a href="/exercise3.html"></a>
+        <button onclick="obtenerDatos()"> Piquele compa</button>
+      </form>
+      <script>
+        function obtenerDatos(){
+          let links = document.links.length;
+          let primerLink= document.links[0];
+          let segundoLink= document.links[1];
+          let tercerLink= document.links[2];
+          
+          alert(links + "\n" + primerLink + "\n" + segundoLink + "\n" + tercerLink);
+        }
+    
+      
+      </script>
+      <script src="excercise3"></script>
+    </body>
+</html>

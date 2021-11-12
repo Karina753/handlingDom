@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="hello()">Cambia container por Hello</button>
+    <button onclick="addClass()">Agrega class main a footer</button>
+    <button onclick="removeClass()">Remueve class main a footer</button>
+    <button onclick="createLi()">Agrega li</button>
+
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">threeEEE</li>
+        </ol>
+    </section>
+    <div class="footer">
+        <p> Hola, soy un footer</p>
+    </div>
+    <style>
+        .main {
+            font-size: 60px;
+            color: red;
+        }
+    </style>
+    <script>
+        let x = document.getElementById("container)");
+        console.log(x);
+
+        let y = document.querySelector("#container");
+        console.log(y);
+
+        console.log(document.querySelector(".second"));
+
+        let tercero = document.querySelector("#container ol .third");
+        console.log(tercero);
+
+        //document.querySelector("#container").innerHTML = "hello";
+
+        let footer = document.getElementsByClassName("footer")[0];
+        footer.classList.add("main");
+
+        // footer.classList.remove("main");
+        
+        function createLi() {
+            var ol = document.getElementsByTagName("ol")[0]; //Crea la variable ol para seleccionar la etiqueta ol del HTML
+            var li = document.createElement("li"); //Crea la variable para crear un elemento li
+            li.appendChild(document.createTextNode("Four"));//añade texto al elemento creado.
+            ol.appendChild(li); //Añade lo creado en li.appendChild a ol
+        }
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>

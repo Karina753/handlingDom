@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS DOM paragraph style</title>
+</head>
+<body>
+  <p class = "texto" id="text">JavaScript Exercises #1</p> 
+    <div>
+      <button id="jsstyle" onclick="js_style()">Style</button>
+    </div>
+    <script>
+     function js_style(){
+            document.getElementsByClassName("texto")[0].style.fontSize = "40px";
+            document.getElementById("text").style.color = "blue";
+        };
+
+    </script>
+    <script src="ejercise1.html"></script>
+</body>
+</html>
